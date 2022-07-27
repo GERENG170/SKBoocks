@@ -1,0 +1,65 @@
+﻿.CatalogConteiner{
+    display: grid;
+    font-family: 'Righteous', cursive;
+    padding: 5% 5% 0 5%;
+    justify-items: center;
+    .catalogTitle{
+        background: white;
+        width: 300px;
+        height: 90px;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        font-size: 45px;
+        border-radius: 25px 25px 0 0;
+        box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+        h1{
+            
+        }
+    }
+    .catalog{
+        box-shadow: 0 10px 30px 20px rgba(0,0,0,0.5);
+        width: 100%;
+        background: white;
+        height: auto;
+        border-radius: 25px;
+        margin-bottom: 100px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        .catalogWrapper{
+            display: grid;
+            justify-content: space-around;
+            padding-top: 5%;
+            grid-template-columns: 25% 25% 25%;
+            width: 80%;
+        .itemBoock{
+            width: 100%;
+            margin-bottom: 15%;
+            height: 350px;
+            display: grid;
+            grid-template-rows: 80% 16%;
+            align-content: space-between;
+            img{
+                background: gray;
+                height: 100%;
+                width: 100%;
+            }
+            .btnOrder{
+                display: grid;
+                align-items: center;
+                text-align: center;
+                height: 100%;
+                background: #DAA967;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+                width: 100%;
+                border-radius: 25px;
+                cursor: pointer;
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+}

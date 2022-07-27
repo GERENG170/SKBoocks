@@ -1,0 +1,56 @@
+﻿.header{
+    width: 100%;
+    height: 70px;
+    display: grid;
+    background: #F2CA91;
+    font-family: 'Righteous', cursive;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    .headerConteiner{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+        padding: 0 3% 0 3%;
+        .iconBlock{
+            cursor: pointer;
+            display: grid;
+            align-items: center;
+            // background: green;
+            h1{
+                font-size: 40px;
+            }
+        }
+        .menuBlock{
+            display: grid;
+            font-size: 25px;
+            grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+            align-items: center;
+            cursor: pointer;
+            .btnCatalog{
+                display: grid;
+                justify-content: end;
+                align-items: center;
+                .btnCatalogConteiner{
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    background: #DAA967;
+                    width: 170px;
+                    height: 40px;
+                    border-radius: 25px;
+                    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+                }
+            }
+            .btnContacts{
+                display: grid;
+                justify-content: end;
+            }
+            .btnAbout{
+                display: grid;
+                // background: aqua;
+                justify-content: end;
+            }
+        }
+    }
+}
