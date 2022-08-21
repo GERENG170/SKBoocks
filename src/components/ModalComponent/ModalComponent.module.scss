@@ -1,11 +1,126 @@
-﻿.mainModal{
+﻿.modal{
+    display: grid;
     font-size: 30px;
     color: rgb(0, 0, 0);
-    background: violet;
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
-        right: 5px;
-        top: 80%;
-        width:347px;
-        height:160px;  
-        display: block;  
+    top: 0%;
+    width:100%;
+    height:100%;  
+    backdrop-filter: blur(4px);
+    font-family: 'Righteous', cursive;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 70%;
+    align-items: center;
+    .modalCard{
+        display: grid;
+        height: 80%;
+        width: 100%;
+        // min-width: 1000px;
+        background: white;
+        border-radius: 25px;
+        grid-template-columns: 35% 65%;
+        box-shadow: 0 10px 40px 10px rgba(0,0,0,0.5);
+        .imgWrapper{
+            display: grid;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 25px 0px 0 25px ;
+            background: aqua;
+            box-shadow:8px 0px 10px 0px rgba(50, 50, 50, 0.61);
+            img{
+                display: grid;
+                height: 100%;
+                width: 100%;
+                
+            }
+        }
+        .infoWrapper{
+            display: grid;
+            width: 100%;
+            grid-template-areas: 'title close' 'body body' 'order order';
+            margin: 5% 0 5% 20px;
+            grid-template-rows: 15% 60% 15%;
+            grid-template-columns: 50% 50%;
+            align-content: space-between;
+            justify-content: space-between;
+            .btn{
+                display: grid;
+                width: 100px;
+                margin-left: 100px;
+                height: 50px;
+                background: rgb(0, 0, 0);
+                color: white; 
+                grid-area: close;
+            }
+            .mainTitle{
+                grid-area: title;
+                font-size: 35px;
+            }
+            .mainBody{
+                width: 95%;
+                height: 100%;
+                grid-area: body;
+                color: #3C3C3C;
+                grid-template-rows: 50%;
+                form{
+                    display: grid;
+                    grid-template-rows: 25% 25% 25%;
+                    align-content: space-between;
+                    width: 95%;
+                    height: 100%;
+                    
+                    input{
+                        border: 1px solid rgb(129, 129, 129);
+                        border-radius: 15px;
+                        background: rgb(196, 196, 196);
+                        font-size: 35px;
+                        text-align: center;
+                        &::placeholder{
+                            color: rgb(65, 65, 65);
+                        }
+                    }
+                    button{
+                        font-size: 35px;
+                        background: #DAA967;
+                        border-radius: 25px;
+                        box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .orderBtnCard{
+                display: grid;
+                align-items: center;
+                text-align: center;
+                height: 80%;
+                background: #DAA967;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+                width: 50%;
+                border-radius: 25px;
+                cursor: pointer;
+                grid-area: order;
+                font-size: 35px;
+            }
+            .closeOrderBtnCard{
+                display: grid;
+                align-items: center;
+                text-align: center;
+                height: 80%;
+                background: #0c0c0c;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+                width: 50%;
+                font-size: 35px;
+                border-radius: 25px;
+                color: white;
+                cursor: pointer;
+                grid-area: order;
+            }
+        }
+    
+        
+    }
+    
 }

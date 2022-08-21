@@ -2,6 +2,7 @@
 // Please do not change this file!
 interface CssExports {
   'btnCardOrder': string;
+  'btnSlider': string;
   'card': string;
   'cardAbout': string;
   'cardBoock': string;
@@ -10,6 +11,7 @@ interface CssExports {
   'infoBoockBlock': string;
   'infoCard': string;
   'starsCard': string;
+  'wrapperCards': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

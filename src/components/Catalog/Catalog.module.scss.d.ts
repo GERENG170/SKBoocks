@@ -6,6 +6,7 @@ interface CssExports {
   'catalog': string;
   'catalogTitle': string;
   'catalogWrapper': string;
+  'go-left-right': string;
   'itemBoock': string;
 }
 export const cssExports: CssExports;

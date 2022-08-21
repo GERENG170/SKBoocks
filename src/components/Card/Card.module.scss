@@ -26,49 +26,68 @@
                 font-size: 30px;
             }
         }
-        .cardBoock{
+        .wrapperCards{
             display: grid;
-            grid-template-columns:35% 65%;
-            background: white;
-            border-radius: 25px;
-            align-content: center;
-            box-shadow: 0 10px 40px 10px rgba(0,0,0,0.5);
-            .imgBoockBlock{
-                padding: 0 0 0 10%;
-                img{
-                    height: 350px;
-                    width: 250px;
-                }
-            }
-            .infoBoockBlock{
+            grid-template-columns: 100% 100% 100%;
+        
+            .cardBoock{
+                margin: 0 5% 0% 0;
                 display: grid;
-                align-content: space-between;
-                padding: 0 5% 0 0;
-                width: 100%;
-                h1{
-                    font-size: 45px;
+                position: absolute;
+                grid-template-columns:35% 65%;
+                background: white;
+                border-radius: 25px;
+                align-content: center;
+                height: 480px;
+                box-shadow: 0 10px 40px 10px rgba(0,0,0,0.5);
+                .imgBoockBlock{
+                    padding: 0 0 0 10%;
+                    img{
+                        height: 350px;
+                        width: 250px;
+                    }
                 }
-                .starsCard{
-                    font-size: 30px;
-                    color: #3C3C3C;
+                .infoBoockBlock{
+                    display: grid;
+                    align-content: space-between;
+                    padding: 0 5% 0 0;
+                    width: 100%;
+                    h1{
+                        font-size: 45px;
+                    }
+                    .starsCard{
+                        font-size: 30px;
+                        color: #3C3C3C;
+                    }
+                    .infoCard{
+                        font-size: 25px;
+                        width: 95%;
+                    }
+                    .btnCardOrder{
+                        background: #DAA967;
+                        height: 50px;
+                        width: 30%;
+                        border-radius: 25px;
+                        text-align: center;
+                        display: grid;
+                        align-items: center;
+                        box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+                        cursor: pointer;
+                        p{
+                            font-size: 25px;
+                        }
+                    }
                 }
-                .infoCard{
-                    font-size: 25px;
-                    width: 80%;
-                }
-                .btnCardOrder{
-                    background: #DAA967;
+                .btnSlider{
                     height: 50px;
                     width: 30%;
-                    border-radius: 25px;
-                    text-align: center;
-                    display: grid;
-                    align-items: center;
-                    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
-                    cursor: pointer;
-                    p{
-                        font-size: 25px;
-                    }
+                    border-radius: 25px 0 0 0;
+                    background: rgb(110, 110, 110);
+                    position: absolute;
+                    bottom: 0;
+                    color: white;
+                    right: 0;
+                    box-shadow: 0 0px 15px rgba(0,0,0,0.5);
                 }
             }
         }

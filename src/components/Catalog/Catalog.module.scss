@@ -1,4 +1,9 @@
-﻿.CatalogConteiner{
+﻿@keyframes go-left-right {        /* объявляем имя анимации: "go-left-right" */
+    from { padding: 10px; }             /* от: left: 0px */
+    to { padding: 3px; } /* до: left: 100%-50px */
+  }
+
+.CatalogConteiner{
     display: grid;
     font-family: 'Righteous', cursive;
     padding: 5% 5% 0 5%;
@@ -33,13 +38,20 @@
             padding-top: 5%;
             grid-template-columns: 25% 25% 25%;
             width: 80%;
+        
         .itemBoock{
+            
+            padding: 10px;
             width: 100%;
             margin-bottom: 15%;
             height: 350px;
             display: grid;
             grid-template-rows: 80% 16%;
             align-content: space-between;
+            &:hover{
+                animation: go-left-right 0.1s ;
+                padding: 0px;
+            }
             img{
                 background: gray;
                 height: 100%;
@@ -60,6 +72,8 @@
                 }
             }
         }
+        
+        
     }
 }
 }
